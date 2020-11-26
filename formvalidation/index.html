@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8">
+		<title>Form Validasi</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="validation.js"></script>
+	</head>
+
+	<body>
+		<!-- Kerangka -->
+			<div class="kerangka">
+				<div >
+    				<h1 class="h2opening">REGISTRASI</h1>
+  				</div>
+			<br>
+			<!-- Form Validasi -->
+			<div class="form">
+				<form method="request" name="formku" >
+				<input type="text" class="form_1" id="name" name="name" onKeyPress="return maxlength(event)" placeholder="Nama Pemesan" required /><br>
+				<input type="email" class="form_1" id="email" name="email" placeholder="Email" required /><br>
+				<input type="time" class="form_1" id="jam" name="jam" required /><br>
+					<select name="tujuan" class="form_1" id="tujuan" required>
+						<option value="0">Tujuan Keberangkatan</option>
+						<option value="Jakarta"> Jakarta </option>
+						<option value="Bandung"> Bandung </option>
+						<option value="Malang"> Malang </option>
+						<option value="Jogja"> Jogja </option>
+						<option value="Bali"> Bali </option>
+						<option value="Lombok"> Lombok </option>
+					</select>				
+				<input type="text" class="form_1" id="jmltiket" name="jmltiket" placeholder="Jumlah Tiket " onKeyUp="angka(this)" maxlength="2" required /><br>
+				<input type="submit" class="tombol_kirim" onClick="return validasi()" value="KIRIM">
+			</form>
+
+			<div class="tabel">
+			<div id="chatbox"></div>
+			</div>
+			</div>
+			</div>	
+	</body>
+</html>

@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    background: url("bg0.jpg");
+    background-repeat: no-repeat;
+}
+
+.h2opening{
+	font-family: monospace;
+	font-size: 25px;
+	color: #45415e;
+	font-weight: bold;
+	margin-left: 60px;
+	padding-top: 40px;
+}
+
+.kerangka{
+	width: 400px;
+	height: 300px;
+	background-color: #FFFFFF;
+	margin: 5px auto;
+}
+
+.form{
+	width: 100%;
+	height: 600px;
+	font-size: 30px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+
+}
+
+.form_1{
+	/*membuat lebar form penuh*/
+	box-sizing : border-box;
+	width: 75%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+	text-align: left;
+}
